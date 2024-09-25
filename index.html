@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body
+    {
+      background-color: black;
+      background: url(Imagens/Fundo.gif);
+    } 
+    .TXT 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20%;
+      margin-left: 10%;
+      margin-right: 10%;
+      background-color: black;
+    } 
+    .Resposta
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1cm;
+    } 
+
+    input {
+            margin-right: 0.5rem; /* Espaçamento entre input e botão */
+            padding: 0.5rem; /* Adicionado padding para melhor usabilidade */
+            background-color: #444;
+        }
+        button {
+            padding: 0.5rem 1rem; /* Padding para o botão */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            background-color: #444; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove bordas do botão */
+            border-radius: 4px; /* Cantos arredondados */
+            transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+        }
+  </style>
+  <script>
+    function res1()
+    {
+      if(document.getElementById("idade").value == "18")
+    {
+      location.replace("Page1.html");
+    }
+    }
+  </script>
+  <title>Site</title>
+</head>
+<body>
+  <div class="barra-preta">
+  <div class ="TXT">
+    <img src="Imagens/generatedtext_1.png" width="50%" height="50%">
+  </div>
+  <div class="Resposta">
+    <input id ="idade" type="text">
+    <button onclick="res1()">Enviar</button>
+  </div>
+  </div>
+</body>
+</html>

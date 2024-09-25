@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body
+    {
+        background-color: black;
+        background: url(Imagens/Fundo.gif);
+    }
+    body{background-color: black;}
+    .Cerebro 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2cm;
+    } 
+    .TXT 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4cm;
+    } 
+    .Resposta
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1cm;
+} 
+input {
+        margin-right: 0.5rem; /* Espaçamento entre input e botão */
+        padding: 0.5rem; /* Adicionado padding para melhor usabilidade */
+        background-color: #444;
+    }
+    button {
+        padding: 0.5rem 1rem; /* Padding para o botão */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+        background-color: #444; /* Cor de fundo do botão */
+        color: white; /* Cor do texto do botão */
+        border: none; /* Remove bordas do botão */
+        border-radius: 4px; /* Cantos arredondados */
+        transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+    }
+</style>
+<script>
+        function res2()
+    {
+      if(document.getElementById("resp3").value == "odio")
+    {
+      location.replace("Page3.html");
+    }
+    }
+</script>
+</head>
+    <body>
+    <div class="Cerebro">
+    <img src="Imagens/Tsugino_Haru_ZENO.jpeg" alt="Tsugino">
+    </div>
+    <div class="Resposta">
+    <input id ="resp3" type="text">
+    <button onclick="res2()">Enviar</button>
+        <p>51-02-91-51-61-51<br>51<br>5-81-61-31-5-91<br>5<br>1-02-91-51-61-91-5-81<br>1</p>
+</div>
+</body>
+</html>
